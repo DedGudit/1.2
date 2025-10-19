@@ -1,89 +1,222 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>NeuroStartUp</title>
+    <title>On the Last Way</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="wrapper">
-    <div class="container-fluid">
-        <header>
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">
-                    <img src="img/NeuroStartUpIcon.png" width="31" height="31" class="d-inline-block align-top" alt="">
-                    NeuroStartUp
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item ml-2 mr-2">
-                            <a class="nav-link" href="#promo">О нас</a>
-                        </li>
-                        <li class="nav-item ml-2 mr-2">
-                            <a class="nav-link" href="#contacts">Свяжитесь с нами</a>
-                        </li>
-                    </ul>
-                </div>
-
-            </nav>
-        </header>
-        <main>
-            <h1 class="text-hide m-0">Искусственный интеллект для поиска информации о компаниях</h1>
-            <section id="promo" class="pt-5 pb-3">
-                <div class="promo-container">
-                    <div class="row">
-                        <div class="col-5 mx-auto text-center">
-                            <b class="promo-title">Искусственный интеллект для решения<br>ваших бизнес-задач</b>
-                            <p class="promo-description mt-5">Мы разработали мощнейшую систему для поиска информации о
-                                компаниях на базе искусственного интеллекта</p>
+    <header class="shadow-lg">
+        <nav class="navbar navbar-expand-lg navbar-dark onlastway-nav fixed-top">
+            <a class="navbar-brand d-flex align-items-center" href="lore.html" target="_blank" rel="noopener">
+                <span class="logo-mark mr-2"></span>
+                <span class="logo-text">On the Last Way</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Об игре</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#characters">Персонажи</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#requirements">Системные требования</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#download">Скачать</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#language">Смена языка</a>
+                    </li>
+                    <li class="nav-item ml-lg-3">
+                        <button class="btn btn-outline-light btn-sm menu-icon" type="button" aria-label="Меню">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main id="home" class="pt-5">
+        <section class="hero-section d-flex align-items-center" aria-labelledby="hero-title">
+            <div class="container-fluid">
+                <div class="row no-gutters">
+                    <div class="col-lg-5 offset-lg-1 hero-content">
+                        <p class="chapter">Глава 1</p>
+                        <h1 id="hero-title">Поезд, что везёт к последнему пути</h1>
+                        <p class="lead">Тусклый свет аварийных ламп отражается от запылённых окон, когда главный герой
+                            делает первый шаг внутрь вагона. Каждая остановка приближает к истине — и к собственной
+                            гибели.</p>
+                        <a class="btn btn-warning btn-lg mt-4" href="#download">Начать путь</a>
+                    </div>
+                    <div class="col-lg-4 hero-stats">
+                        <div class="stat-card">
+                            <h2>Бесконечный маршрут</h2>
+                            <p>Каждый запуск генерирует новые вагоны, новые тайны и новых пассажиров-призраков.</p>
+                        </div>
+                        <div class="stat-card">
+                            <h2>Осознай страх</h2>
+                            <p>Используйте редкие источники света, чтобы раскрыть правду о потерянных душах.</p>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="contacts" class="pt-5 pb-5">
-                <div class="contacts-container container">
-                    <div class="row">
-                        <div class="contacts-card col-6 mx-auto card pt-4 pb-4">
-                            <h2 class="text-center">Оставайтесь на связи</h2>
-                            <div class="card-body">
-                                <p class="text-center">Оставьте ваши контакты и наши менеджеры свяжутся с вами в
-                                    ближайшее время</p>
-                                <form>
-                                    <div class="form-group">
-                                        <label for="contact">Email или Телефон*</label>
-                                        <input type="text" class="form-control" id="contact" required>
-                                        <small id="contactHelp" class="form-text text-muted">Исключительно для связи с
-                                            вами
-                                        </small>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="name">Ваше имя*</label>
-                                        <input type="text" class="form-control" id="name" required>
-                                    </div>
-                                    <div class="form-group form-check">
-                                        <input type="checkbox" class="form-check-input" id="agreement">
-                                        <label class="form-check-label" for="agreement">Даю согласие на обработку
-                                            перс.данных</label>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Отправить</button>
-                                </form>
+        <section id="about" class="section-block">
+            <div class="container">
+                <div class="row align-items-start">
+                    <div class="col-lg-4">
+                        <h2>О мире</h2>
+                        <p>«On the Last Way» — атмосферный инди-хоррор, в котором вы исследуете мистический поезд,
+                            собирающий пассажиров на последний путь. Вдохновлённый легендами о проводниках в мир
+                            мёртвых, он предлагает нелинейный сюжет и психологические испытания.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3>Игровой процесс</h3>
+                        <ul class="accent-list">
+                            <li>Исследование вагонов с ограниченным светом.</li>
+                            <li>Диалоги с затерянными душами и моральные выборы.</li>
+                            <li>Пазлы, основанные на времени и звуке.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3>Особенности</h3>
+                        <ul class="accent-list">
+                            <li>Мрачный саундтрек с живыми скрипками и синтезаторами.</li>
+                            <li>Реалистичная система страха и психоза героя.</li>
+                            <li>Динамическое освещение с тёплыми зелёно-жёлтыми акцентами.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="characters" class="section-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="character-card">
+                            <h3>Максим Волков</h3>
+                            <p>Главный герой, частный детектив. Ищет пропавшую семью и теряет связь с реальностью.
+                                Преимущества: наблюдательность и решительность.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="character-card">
+                            <h3>Проводница Эйра</h3>
+                            <p>Таинственная проводница, чьё лицо скрыто в тени. Направляет героя, но её истинные
+                                мотивы неизвестны.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="character-card">
+                            <h3>Пассажир №42</h3>
+                            <p>Душа без памяти, застрявшая между мирами. Откликается на тёплые огни и шёпоты.
+                                Символизирует потерянную надежду.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="character-card">
+                            <h3>Стрелочник</h3>
+                            <p>Хранитель развилки, контролирующий маршруты вагона. Его решения определяют судьбы
+                                пассажиров.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="requirements" class="section-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>Минимальные требования</h2>
+                        <ul class="accent-list">
+                            <li>OS: Windows 10 (64-bit)</li>
+                            <li>Процессор: Intel i5-7500 / AMD Ryzen 3</li>
+                            <li>Оперативная память: 8 GB</li>
+                            <li>Видеокарта: GTX 1050 / Radeon RX 560</li>
+                            <li>Хранилище: 40 GB</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2>Рекомендуемые требования</h2>
+                        <ul class="accent-list">
+                            <li>OS: Windows 11 (64-bit)</li>
+                            <li>Процессор: Intel i7-9700K / AMD Ryzen 5 5600X</li>
+                            <li>Оперативная память: 16 GB</li>
+                            <li>Видеокарта: RTX 2060 / Radeon RX 6700 XT</li>
+                            <li>Хранилище: SSD 40 GB</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="download" class="section-block download-block">
+            <div class="container text-center">
+                <h2>Скачать демоверсию</h2>
+                <p>Окунитесь в атмосферу проклятого поезда прямо сейчас. Демоверсия включает первый акт и
+                    три уникальных встречи.</p>
+                <div class="btn-group mt-4" role="group" aria-label="Платформы">
+                    <a class="btn btn-warning" href="#">Windows</a>
+                    <a class="btn btn-outline-warning" href="#">Linux</a>
+                    <a class="btn btn-outline-warning" href="#">macOS</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="language" class="section-block language-block">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h2>Смена языка</h2>
+                        <p>Выберите предпочитаемый язык интерфейса и озвучки. На релизе будут доступны русская,
+                            английская и японская локализации. Дополнительные языки появятся по мере развития
+                            сообщества.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <form class="language-form" action="#" method="post">
+                            <div class="form-group">
+                                <label for="languageSelect">Интерфейс</label>
+                                <select id="languageSelect" class="form-control custom-select">
+                                    <option>Русский</option>
+                                    <option>English</option>
+                                    <option>日本語</option>
+                                </select>
                             </div>
-                        </div>
+                            <div class="form-group">
+                                <label for="voiceSelect">Озвучка</label>
+                                <select id="voiceSelect" class="form-control custom-select">
+                                    <option>Русская</option>
+                                    <option>Английская</option>
+                                    <option>Без озвучки</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-success" type="submit">Применить</button>
+                        </form>
                     </div>
                 </div>
-            </section>
-        </main>
-        <footer>
-            <p class="text-center">&copy; NeuroStartUp. Все права защищены.</p>
-        </footer>
-    </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center py-4">
+        <small>&copy; 2024 On the Last Way. Все права защищены.</small>
+    </footer>
 </div>
 <script src="js/jquery.slim.min.js"></script>
 <script src="js/popper.min.js"></script>
