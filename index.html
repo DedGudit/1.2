@@ -1,92 +1,171 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>NeuroStartUp</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вкусные идеи — Простые рецепты на каждый день</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="wrapper">
-    <div class="container-fluid">
-        <header>
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">
-                    <img src="img/NeuroStartUpIcon.png" width="31" height="31" class="d-inline-block align-top" alt="">
-                    NeuroStartUp
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item ml-2 mr-2">
-                            <a class="nav-link" href="#promo">О нас</a>
-                        </li>
-                        <li class="nav-item ml-2 mr-2">
-                            <a class="nav-link" href="#contacts">Свяжитесь с нами</a>
-                        </li>
-                    </ul>
-                </div>
-
+<div class="page">
+    <header class="header">
+        <div class="container header__container">
+            <a class="logo" href="#top">Вкусные идеи</a>
+            <nav class="nav">
+                <a class="nav__link" href="#breakfast">Завтраки</a>
+                <a class="nav__link" href="#lunch">Обеды</a>
+                <a class="nav__link" href="#dessert">Десерты</a>
             </nav>
-        </header>
-        <main>
-            <h1 class="text-hide m-0">Искусственный интеллект для поиска информации о компаниях</h1>
-            <section id="promo" class="pt-5 pb-3">
-                <div class="promo-container">
-                    <div class="row">
-                        <div class="col-5 mx-auto text-center">
-                            <b class="promo-title">Искусственный интеллект для решения<br>ваших бизнес-задач</b>
-                            <p class="promo-description mt-5">Мы разработали мощнейшую систему для поиска информации о
-                                компаниях на базе искусственного интеллекта</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        </div>
+    </header>
 
-            <section id="contacts" class="pt-5 pb-5">
-                <div class="contacts-container container">
-                    <div class="row">
-                        <div class="contacts-card col-6 mx-auto card pt-4 pb-4">
-                            <h2 class="text-center">Оставайтесь на связи</h2>
-                            <div class="card-body">
-                                <p class="text-center">Оставьте ваши контакты и наши менеджеры свяжутся с вами в
-                                    ближайшее время</p>
-                                <form>
-                                    <div class="form-group">
-                                        <label for="contact">Email или Телефон*</label>
-                                        <input type="text" class="form-control" id="contact" required>
-                                        <small id="contactHelp" class="form-text text-muted">Исключительно для связи с
-                                            вами
-                                        </small>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="name">Ваше имя*</label>
-                                        <input type="text" class="form-control" id="name" required>
-                                    </div>
-                                    <div class="form-group form-check">
-                                        <input type="checkbox" class="form-check-input" id="agreement">
-                                        <label class="form-check-label" for="agreement">Даю согласие на обработку
-                                            перс.данных</label>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Отправить</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+    <main id="top">
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__text">
+                    <h1 class="hero__title">Готовьте с удовольствием</h1>
+                    <p class="hero__subtitle">Мы собрали для вас простые и вкусные рецепты, которые можно приготовить из доступных ингредиентов. Выбирайте блюдо по настроению и радуйте близких!</p>
+                    <a class="hero__button" href="#breakfast">Смотреть рецепты</a>
                 </div>
-            </section>
-        </main>
-        <footer>
-            <p class="text-center">&copy; NeuroStartUp. Все права защищены.</p>
-        </footer>
-    </div>
+            </div>
+        </section>
+
+        <section id="breakfast" class="recipes">
+            <div class="container">
+                <h2 class="section-title">Быстрые завтраки</h2>
+                <div class="recipes__grid">
+                    <article class="recipe-card">
+                        <h3 class="recipe-card__title">Овсянка с яблоком и корицей</h3>
+                        <p class="recipe-card__time">15 минут • 2 порции</p>
+                        <h4 class="recipe-card__subtitle">Ингредиенты</h4>
+                        <ul class="recipe-card__list">
+                            <li>1 стакан овсяных хлопьев</li>
+                            <li>2 стакана молока или воды</li>
+                            <li>1 яблоко, нарезанное кубиками</li>
+                            <li>1 ч. л. корицы и мёд по вкусу</li>
+                        </ul>
+                        <h4 class="recipe-card__subtitle">Как приготовить</h4>
+                        <ol class="recipe-card__steps">
+                            <li>Доведите молоко до кипения, добавьте овсянку и варите 5–7 минут.</li>
+                            <li>Добавьте яблоко, корицу и мёд, прогрейте ещё минуту.</li>
+                            <li>Подавайте, украсив орешками или ягодами.</li>
+                        </ol>
+                    </article>
+                    <article class="recipe-card">
+                        <h3 class="recipe-card__title">Сырники из творога</h3>
+                        <p class="recipe-card__time">20 минут • 3 порции</p>
+                        <h4 class="recipe-card__subtitle">Ингредиенты</h4>
+                        <ul class="recipe-card__list">
+                            <li>400 г творога</li>
+                            <li>1 яйцо</li>
+                            <li>3 ст. л. муки + немного для панировки</li>
+                            <li>2 ст. л. сахара, щепотка соли</li>
+                        </ul>
+                        <h4 class="recipe-card__subtitle">Как приготовить</h4>
+                        <ol class="recipe-card__steps">
+                            <li>Смешайте творог, яйцо, сахар и соль. Подсыпьте муку.</li>
+                            <li>Сформируйте сырники, обваляйте в муке и обжарьте на среднем огне по 3 минуты с каждой стороны.</li>
+                            <li>Подавайте со сметаной или ягодным вареньем.</li>
+                        </ol>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="lunch" class="recipes recipes--accent">
+            <div class="container">
+                <h2 class="section-title">Сытные обеды</h2>
+                <div class="recipes__grid">
+                    <article class="recipe-card">
+                        <h3 class="recipe-card__title">Куриный суп с лапшой</h3>
+                        <p class="recipe-card__time">40 минут • 4 порции</p>
+                        <h4 class="recipe-card__subtitle">Ингредиенты</h4>
+                        <ul class="recipe-card__list">
+                            <li>2 куриных бедра без кожи</li>
+                            <li>1 морковь и 1 луковица</li>
+                            <li>1 картофелина и 80 г лапши</li>
+                            <li>Лавровый лист, зелень, соль и перец</li>
+                        </ul>
+                        <h4 class="recipe-card__subtitle">Как приготовить</h4>
+                        <ol class="recipe-card__steps">
+                            <li>Отварите курицу до готовности, снимите мясо с кости и верните в бульон.</li>
+                            <li>Добавьте нарезанные овощи и варите 10 минут.</li>
+                            <li>Засыпьте лапшу и готовьте ещё 5 минут, приправьте зеленью.</li>
+                        </ol>
+                    </article>
+                    <article class="recipe-card">
+                        <h3 class="recipe-card__title">Запечённые овощи с сыром</h3>
+                        <p class="recipe-card__time">35 минут • 3 порции</p>
+                        <h4 class="recipe-card__subtitle">Ингредиенты</h4>
+                        <ul class="recipe-card__list">
+                            <li>1 кабачок и 1 сладкий перец</li>
+                            <li>1 баклажан и 10 помидоров черри</li>
+                            <li>2 ст. л. оливкового масла</li>
+                            <li>80 г тёртого сыра и любимые травы</li>
+                        </ul>
+                        <h4 class="recipe-card__subtitle">Как приготовить</h4>
+                        <ol class="recipe-card__steps">
+                            <li>Нарежьте овощи, сбрызните маслом, посыпьте травами и запекайте 20 минут при 200°С.</li>
+                            <li>Посыпьте сыром и запекайте ещё 5 минут до золотистой корочки.</li>
+                            <li>Подавайте как самостоятельное блюдо или гарнир.</li>
+                        </ol>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="dessert" class="recipes">
+            <div class="container">
+                <h2 class="section-title">Лёгкие десерты</h2>
+                <div class="recipes__grid">
+                    <article class="recipe-card">
+                        <h3 class="recipe-card__title">Йогуртовый парфе с ягодами</h3>
+                        <p class="recipe-card__time">10 минут • 2 порции</p>
+                        <h4 class="recipe-card__subtitle">Ингредиенты</h4>
+                        <ul class="recipe-card__list">
+                            <li>200 г натурального йогурта</li>
+                            <li>1 ст. л. мёда</li>
+                            <li>Горсть мюсли или гранолы</li>
+                            <li>Свежие ягоды для подачи</li>
+                        </ul>
+                        <h4 class="recipe-card__subtitle">Как приготовить</h4>
+                        <ol class="recipe-card__steps">
+                            <li>Смешайте йогурт с мёдом.</li>
+                            <li>Выложите в стаканы слоями йогурт, мюсли и ягоды.</li>
+                            <li>Украсьте листочком мяты и подавайте сразу.</li>
+                        </ol>
+                    </article>
+                    <article class="recipe-card">
+                        <h3 class="recipe-card__title">Банановые панкейки</h3>
+                        <p class="recipe-card__time">25 минут • 3 порции</p>
+                        <h4 class="recipe-card__subtitle">Ингредиенты</h4>
+                        <ul class="recipe-card__list">
+                            <li>2 спелых банана</li>
+                            <li>2 яйца</li>
+                            <li>150 г муки и 1 ч. л. разрыхлителя</li>
+                            <li>100 мл молока, щепотка корицы</li>
+                        </ul>
+                        <h4 class="recipe-card__subtitle">Как приготовить</h4>
+                        <ol class="recipe-card__steps">
+                            <li>Разомните бананы, смешайте с яйцами и молоком.</li>
+                            <li>Добавьте муку с разрыхлителем и корицей, перемешайте.</li>
+                            <li>Выпекайте панкейки на смазанной сковороде по 2 минуты с каждой стороны.</li>
+                        </ol>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <p class="footer__text">© 2024 «Вкусные идеи». Делимся простыми рецептами и вдохновением каждый день.</p>
+            <a class="footer__link" href="mailto:hello@vkusno.ru">hello@vkusno.ru</a>
+        </div>
+    </footer>
 </div>
-<script src="js/jquery.slim.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
